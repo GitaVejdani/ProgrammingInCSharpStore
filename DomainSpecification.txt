@@ -1,0 +1,114 @@
+﻿خریدار /مشتری:
+نام، نام خانوادگی،کد ملی، آدرس ...
+
+کالا:
+کد کالا، نام کالا ، قیمت ...
+
+دسته بندی:
+نام 
+
+سبد خرید:
+هر مشتری یک سبد خرید دارد.
+هر سبد خرید دارای یک سری آیتم است
+مشتری می‌تواند به این سبد یک آیتم جدیداضافه ، آیتم موجود در سبد را حذف کند یا تعداد آیتم‌های موجود را کم و زیاد کند
+وضعیت سبد خرید درصورتیکه مشتری در حال خریداست فعاله و اگر نهایی شده باشد تبدیل به یک سفارش می‌گردد
+
+سفارش:
+پس از نهایی شدن سبد خرید،مشتری به درگاه پرداخت متصل گردیده سپس نتیجه‌ی تراکنش بررسی و درصورت موفق بودن تراکنش زمان ارسال هماهنگ می‌گردد.
+
+وضعیت سفارش:در انتظار پرداخت- پرداخت شده-کنسل -ارسال شده -تحویل داده شده
+
+
+
+
+
+
+	Customer:
+
+		- ID -> int -> auto generated
+		- FirstName -> string
+		- LastName -> string
+		- NationalCode -> string
+		- PhoneNumber -> string
+		- Address -> string
+		- UserName -> string
+		- Password(Hash) -> string
+		
+		+ Register
+		+ Read
+		+ Update
+		+ Delete
+		
+	Cart:
+
+		- ID -> int -> auto generated
+		- CustomerId -> int
+		- CartStatus -> enum {Active- Checkout}
+		- CreatedAt -> Date
+		- UpdatedAt -> Date
+
+		+ AddItem
+		+ RemoveItem
+		+ UpdateQuantity
+		+ Checkout
+
+	CartItem:
+
+		- Id -> int -> auto generated
+		- CartId -> int
+		- ProductId -> int
+		- Quantity -> int
+		- UnitPrice -> decimal
+		
+		
+	Order:
+	
+		- ID -> int -> auto generated
+		- CustomerId -> int
+		- CartID -> int
+		- OrderDate -> Date
+		- TotalAmount -> int
+		- OrderStatus -> enum {Pending- Paid- Cancelled- Shipped- Delivered}
+
+		+ Pay
+		+ Cancel
+		
+	OrderItem:
+
+		- Id -> int -> auto generated
+		- OrderId -> int
+		- ProductId -> int
+		- Quantity -> int
+		- UnitPrice -> decimal
+		
+	Product:
+			
+		- ID -> int -> auto generated
+		- CategoryID -> int 
+		- Name -> string
+		_ Price -> decimal
+		- CurrentStock -> int
+		
+
+		+ Read
+		+ Update
+		+ Delete
+		
+
+	Category:
+
+	    - ID -> int -> auto generated
+	    - Name -> string
+		
+
+		+ Create
+		+ Read
+		+ Update
+
+
+	
+
+	
+		
+
+	
