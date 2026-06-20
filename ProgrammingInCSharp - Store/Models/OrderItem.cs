@@ -2,8 +2,7 @@
 
 namespace ProgrammingInCSharp___Store.Models;
 
-public class Order
-
+public class OrderItem
 {
     public int ID { get; set; }
     public int OrderId { get; set; }
@@ -12,5 +11,6 @@ public class Order
     public decimal UnitPrice { get; set; }
     public OrderStatus Status { get; set; }
 
+   
 
 }

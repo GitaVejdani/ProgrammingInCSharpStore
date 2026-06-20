@@ -1,8 +1,8 @@
 namespace ProgrammingInCSharp___Store
 {
-    public partial class Form1 : Form
+    public partial class ProductForm : Form
     {
-        public Form1()
+        public ProductForm()
         {
             InitializeComponent();
         }
