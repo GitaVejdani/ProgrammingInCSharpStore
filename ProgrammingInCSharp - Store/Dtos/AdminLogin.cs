@@ -1,4 +1,4 @@
-﻿namespace ProgrammingInCSharp___Store.Models;
+﻿namespace ProgrammingInCSharp___Store.Dtos;
 
 public class AdminLogin
 {

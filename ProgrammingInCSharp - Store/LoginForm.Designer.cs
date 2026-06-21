@@ -84,7 +84,7 @@
             forgetPasswordButton.TabIndex = 4;
             forgetPasswordButton.Text = "فراموشی رمز عبور";
             forgetPasswordButton.UseVisualStyleBackColor = true;
-            forgetPasswordButton.Click += button1_Click;
+            
             // 
             // registerButton
             // 
@@ -105,7 +105,7 @@
             loginButton.TabIndex = 6;
             loginButton.Text = "ورود";
             loginButton.UseVisualStyleBackColor = true;
-            loginButton.Click += button2_Click;
+            
             // 
             // LoginForm
             // 
