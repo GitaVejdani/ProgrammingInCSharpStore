@@ -1,4 +1,5 @@
-﻿namespace ProgrammingInCSharp___Store
+﻿
+namespace ProgrammingInCSharp___Store
 {
     partial class LoginForm
     {
@@ -46,7 +47,6 @@
             UserNameLabel.Size = new Size(87, 25);
             UserNameLabel.TabIndex = 0;
             UserNameLabel.Text = "نام کاربری";
-            
             // 
             // userNameTextBox
             // 
@@ -73,7 +73,6 @@
             passwordLabel.Size = new Size(57, 25);
             passwordLabel.TabIndex = 2;
             passwordLabel.Text = "پسورد";
-           
             // 
             // forgetPasswordButton
             // 
@@ -84,7 +83,7 @@
             forgetPasswordButton.TabIndex = 4;
             forgetPasswordButton.Text = "فراموشی رمز عبور";
             forgetPasswordButton.UseVisualStyleBackColor = true;
-            
+            forgetPasswordButton.Click += forgetPasswordButton_Click;
             // 
             // registerButton
             // 
@@ -95,6 +94,7 @@
             registerButton.TabIndex = 5;
             registerButton.Text = "ثبت نام کاربر";
             registerButton.UseVisualStyleBackColor = true;
+            registerButton.Click += this.registerButton_Click;
             // 
             // loginButton
             // 
@@ -105,7 +105,6 @@
             loginButton.TabIndex = 6;
             loginButton.Text = "ورود";
             loginButton.UseVisualStyleBackColor = true;
-            
             // 
             // LoginForm
             // 
@@ -135,5 +134,7 @@
         private Button forgetPasswordButton;
         private Button registerButton;
         private Button loginButton;
+
+      
     }
 }

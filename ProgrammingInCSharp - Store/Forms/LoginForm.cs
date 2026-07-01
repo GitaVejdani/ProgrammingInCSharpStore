@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using ProgrammingInCSharp___Store.Dtos;
+using ProgrammingInCSharp___Store.Forms;
 
 namespace ProgrammingInCSharp___Store;
 
@@ -21,35 +22,47 @@ public partial class LoginForm : Form
 
             }
         }
-     }
+    }
 
     private void loginButton_Click(object sender, EventArgs e)
     {
-        string username = userNameTextBox.Text; 
+        string username = userNameTextBox.Text;
         string password = passwordTextBox.Text;
         bool successLogin = false;
-            
+
         if (logins is null || logins.Count == 0)
         {
             MessageBox.Show("لطفا ابتدا فایل کانفیگ ادمین‌ها را ایجاد نمائید.");
             return;
         }
 
-        for (int i = 0; i < logins.Count; i++) 
-             if (logins[i].Username.Trim().ToLower() == username.Trim().ToLower() && logins[i].Password.Trim() == password.Trim())
-                 successLogin = true;
-            
-            if (successLogin)
-            {
-                ProductForm productForm = new ProductForm();
-                productForm.ShowDialog();
-                return;
-            }
-            else
-            {
-                MessageBox.Show("لطفا نام کاربری یا رمز عبور صحیح را وارد نمائید.");
-                return;
-            }
-        
+        for (int i = 0; i < logins.Count; i++)
+            if (logins[i].Username.Trim().ToLower() == username.Trim().ToLower() && logins[i].Password.Trim() == password.Trim())
+                successLogin = true;
+
+        if (successLogin)
+        {
+            ProductForm productForm = new ProductForm();
+            productForm.ShowDialog();
+            return;
+        }
+        else
+        {
+            MessageBox.Show("لطفا نام کاربری یا رمز عبور صحیح را وارد نمائید.");
+            return;
+        }
+
+    }
+
+    private void forgetPasswordButton_Click(object sender, EventArgs e)
+    {
+        ForgetPasswordForm forgetpasswordForm = new ForgetPasswordForm();
+        forgetpasswordForm.ShowDialog();
+    }
+
+    private void registerButton_Click(object sender, EventArgs e)
+    {
+        RegisterForm registerForm = new RegisterForm();
+        registerForm.ShowDialog();
     }
 }
