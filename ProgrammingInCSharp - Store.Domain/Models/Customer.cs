@@ -1,7 +1,7 @@
-﻿using ProgrammingInCSharp___Store.Enums;
+﻿using ProgrammingInCSharp___Store.Domain;
 using System.Security.Policy;
 
-namespace ProgrammingInCSharp___Store.Models;
+namespace ProgrammingInCSharp___Store.Domain;
 
 public class Customer
 {

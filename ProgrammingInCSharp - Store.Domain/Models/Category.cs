@@ -1,4 +1,4 @@
-﻿namespace ProgrammingInCSharp___Store.Models;
+﻿namespace ProgrammingInCSharp___Store.Domain;
 
 public class Category
 {

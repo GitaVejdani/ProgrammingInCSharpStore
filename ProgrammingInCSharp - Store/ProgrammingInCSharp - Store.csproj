@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Bussiness\" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <ProjectReference Include="..\ProgrammingInCSharp - Store.Business\ProgrammingInCSharp - Store.Business.csproj" />
   </ItemGroup>
 
 </Project>

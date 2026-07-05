@@ -1,6 +1,6 @@
-﻿using ProgrammingInCSharp___Store.Enums;
+﻿using ProgrammingInCSharp___Store.Domain;
 
-namespace ProgrammingInCSharp___Store.Models;
+namespace ProgrammingInCSharp___Store.Domain;
 
 public class CartItem
 {

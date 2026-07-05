@@ -1,4 +1,4 @@
-﻿namespace ProgrammingInCSharp___Store.Enums;
+﻿namespace ProgrammingInCSharp___Store.Domain;
 
 public enum CartStatus
 {

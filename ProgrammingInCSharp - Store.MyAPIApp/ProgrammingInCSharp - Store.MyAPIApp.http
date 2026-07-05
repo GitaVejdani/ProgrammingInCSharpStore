@@ -1,0 +1,6 @@
+@ProgrammingInCSharp___Store.MyAPIApp_HostAddress = http://localhost:5291
+
+GET {{ProgrammingInCSharp___Store.MyAPIApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

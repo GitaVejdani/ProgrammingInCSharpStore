@@ -1,8 +1,9 @@
-﻿using ProgrammingInCSharp___Store.Enums;
+﻿using ProgrammingInCSharp___Store.Domain;
 
-namespace ProgrammingInCSharp___Store.Models;
+namespace ProgrammingInCSharp___Store.Domain;
 
-public class OrderItem
+public class Order
+
 {
     public int ID { get; set; }
     public int OrderId { get; set; }
@@ -11,6 +12,5 @@ public class OrderItem
     public decimal UnitPrice { get; set; }
     public OrderStatus Status { get; set; }
 
-   
 
 }

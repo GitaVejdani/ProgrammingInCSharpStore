@@ -1,7 +1,7 @@
-﻿using ProgrammingInCSharp___Store.Enums;
+﻿using ProgrammingInCSharp___Store.Domain;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace ProgrammingInCSharp___Store.Models;
+namespace ProgrammingInCSharp___Store.Domain;
 
 public class Cart
 {
