@@ -1,7 +1,12 @@
-﻿namespace ProgrammingInCSharp___Store.Dtos;
+﻿using Newtonsoft.Json;
+
+namespace ProgrammingInCSharp___Store.Dtos;
 
 public class AdminLogin
 {
-    public string Username { get; set; }
-    public string Password { get; set; }
+    [JsonProperty]
+    public string Username { get; private set; }
+
+    [JsonProperty]
+    public string Password { get; private set; }
 }

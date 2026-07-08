@@ -47,6 +47,7 @@ namespace ProgrammingInCSharp___Store
             UserNameLabel.Size = new Size(87, 25);
             UserNameLabel.TabIndex = 0;
             UserNameLabel.Text = "نام کاربری";
+            
             // 
             // userNameTextBox
             // 
@@ -94,7 +95,7 @@ namespace ProgrammingInCSharp___Store
             registerButton.TabIndex = 5;
             registerButton.Text = "ثبت نام کاربر";
             registerButton.UseVisualStyleBackColor = true;
-            registerButton.Click += this.registerButton_Click;
+            registerButton.Click += registerButton_Click;
             // 
             // loginButton
             // 
@@ -105,6 +106,7 @@ namespace ProgrammingInCSharp___Store
             loginButton.TabIndex = 6;
             loginButton.Text = "ورود";
             loginButton.UseVisualStyleBackColor = true;
+           
             // 
             // LoginForm
             // 

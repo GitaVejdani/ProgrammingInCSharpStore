@@ -1,4 +1,4 @@
-namespace ProgrammingInCSharp___Store
+﻿namespace ProgrammingInCSharp___Store
 {
     public partial class ProductForm : Form
     {
@@ -6,5 +6,12 @@ namespace ProgrammingInCSharp___Store
         {
             InitializeComponent();
         }
+
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

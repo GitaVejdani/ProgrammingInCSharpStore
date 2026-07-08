@@ -26,7 +26,9 @@ public partial class LoginForm : Form
 
     private void loginButton_Click(object sender, EventArgs e)
     {
+        
         string username = userNameTextBox.Text;
+        
         string password = passwordTextBox.Text;
         bool successLogin = false;
 
@@ -65,4 +67,8 @@ public partial class LoginForm : Form
         RegisterForm registerForm = new RegisterForm();
         registerForm.ShowDialog();
     }
+
+
+
+   
 }
