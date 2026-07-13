@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp", "..\ProgrammingInCSharpStore.MyWindowsformApp\ProgrammingInCSharpStore.MyWindowsformApp.csproj", "{D98260D6-6745-756E-8A55-37CEEABC1255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyAPIAPP", "..\ProgrammingInCSharpStore.MyWindowsformApp.MyAPIApp\ProgrammingInCSharpStore.MyAPIAPP.csproj", "{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.Domain", "..\ProgrammingInCSharpStore.MyWindowsformApp.Domain\ProgrammingInCSharpStore.MyWindowsformApp.Domain.csproj", "{16013919-189E-8B72-1CA5-1CA8BBA9416E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.DAL", "..\ProgrammingInCSharpStore.MyWindowsformApp.DAL\ProgrammingInCSharpStore.MyWindowsformApp.DAL.csproj", "{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.Business", "..\ProgrammingInCSharpStore.MyWindowsformApp.Business\ProgrammingInCSharpStore.MyWindowsformApp.Business.csproj", "{A86613E2-14D3-2160-C294-B8C89933A8E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1441D3C8-DB29-4854-8531-5F2462D67BB0}"
+	ProjectSection(SolutionItems) = preProject
+		..\DomainSpecification.txt = ..\DomainSpecification.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{AC9D5818-8394-40C2-AEF7-3242843F2471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{FAF7DE49-5621-41E0-9819-938E545E7680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{DACD8CB2-E039-4FDE-A02D-4592BA44C935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{EDA9CF67-2B9F-49C8-BA6E-05C199103155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D98260D6-6745-756E-8A55-37CEEABC1255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98260D6-6745-756E-8A55-37CEEABC1255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98260D6-6745-756E-8A55-37CEEABC1255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98260D6-6745-756E-8A55-37CEEABC1255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16013919-189E-8B72-1CA5-1CA8BBA9416E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16013919-189E-8B72-1CA5-1CA8BBA9416E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16013919-189E-8B72-1CA5-1CA8BBA9416E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16013919-189E-8B72-1CA5-1CA8BBA9416E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86613E2-14D3-2160-C294-B8C89933A8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86613E2-14D3-2160-C294-B8C89933A8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86613E2-14D3-2160-C294-B8C89933A8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86613E2-14D3-2160-C294-B8C89933A8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D98260D6-6745-756E-8A55-37CEEABC1255} = {EDA9CF67-2B9F-49C8-BA6E-05C199103155}
+		{184B9E98-E3F7-16EA-6EF7-2EB578743B5A} = {EDA9CF67-2B9F-49C8-BA6E-05C199103155}
+		{16013919-189E-8B72-1CA5-1CA8BBA9416E} = {DACD8CB2-E039-4FDE-A02D-4592BA44C935}
+		{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564} = {FAF7DE49-5621-41E0-9819-938E545E7680}
+		{A86613E2-14D3-2160-C294-B8C89933A8E7} = {AC9D5818-8394-40C2-AEF7-3242843F2471}
+		{AC9D5818-8394-40C2-AEF7-3242843F2471} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FAF7DE49-5621-41E0-9819-938E545E7680} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DACD8CB2-E039-4FDE-A02D-4592BA44C935} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EDA9CF67-2B9F-49C8-BA6E-05C199103155} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EE5BC49-C9CF-4CE9-87BD-F778EBB49354}
+	EndGlobalSection
+EndGlobal
