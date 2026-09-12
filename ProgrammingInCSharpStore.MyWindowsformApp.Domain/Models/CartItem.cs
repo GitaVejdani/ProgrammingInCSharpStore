@@ -13,7 +13,6 @@ public class CartItem :IEntity<long>
     public int Quantity { get; set; }
     public decimal UnitPrice  { get; set; }
 
-   // public Product Product { get; set; }
 
 
 

@@ -10,10 +10,13 @@ public class Order:IEntity<long>
     public DateTime CreatedAt { get; set; }
     public bool IsDeleted { get; set; }
     public DateTime DeletedAt { get; set; }
-    public long ProductId { get; set; }
-    public int Quantity { get; set; }
-    public decimal UnitPrice { get; set; }
     public OrderStatus Status { get; set; }
+
+    public long CustomerId { get; set; }
+    public long CartId { get; set; }
+    public DateTime OrderDate { get; set; }
+    public decimal TotalAmount { get; set; }
+
 
 
 }

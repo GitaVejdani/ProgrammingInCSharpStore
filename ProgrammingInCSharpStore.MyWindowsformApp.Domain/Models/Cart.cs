@@ -13,8 +13,7 @@ public class Cart:IEntity<long>
     public DateTime DeletedAt { get; set; }
     public CartStatus Status { get; set; }
     public long CustomerID { get; set; }
-    public CartStatus Type { get; set; }
-     public DateTime? UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
     
     public List<CartItem> Items { get; set; } = new();
 
