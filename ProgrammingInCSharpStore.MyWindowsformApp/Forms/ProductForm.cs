@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Models;
 using System.Data;
 
 
@@ -15,24 +16,15 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
         {
             InitializeComponent();
             SetCategoryIds();
+            RegisterCategoryEvents();
 
-            cPUToolStripMenuItem.Click += CategoryItem_Click;
-            motherboardToolStripMenuItem.Click += CategoryItem_Click;
-            rAMToolStripMenuItem.Click += CategoryItem_Click;
-            caseToolStripMenuItem.Click += CategoryItem_Click;
-            powerSupplyToolStripMenuItem.Click += CategoryItem_Click;
-
-            monitorToolStripMenuItem.Click += CategoryItem_Click;
-            mouseToolStripMenuItem.Click += CategoryItem_Click;
-            keyboardToolStripMenuItem.Click += CategoryItem_Click;
-
-            modemToolStripMenuItem.Click += CategoryItem_Click;
-            networkCardToolStripMenuItem.Click += CategoryItem_Click;
-            networkAccessoriesToolStripMenuItem.Click += CategoryItem_Click;
         }
         public ProductForm(int categoryId)
         {
             InitializeComponent();
+
+            SetCategoryIds();
+            RegisterCategoryEvents();
 
             CategoryId = categoryId;
 
@@ -56,7 +48,8 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
                 while (reader.Read())
                 {
-                    int id = reader.GetInt32(0);
+                    int id = Convert.ToInt32(reader[0]);
+
                     string persianName = reader.GetString(1);
 
                     switch (persianName)
@@ -113,9 +106,27 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             }
         }
 
-         private void CategoryItem_Click(object sender, EventArgs e)
+        private void RegisterCategoryEvents()
+        {
+            cPUToolStripMenuItem.Click += CategoryItem_Click;
+            motherboardToolStripMenuItem.Click += CategoryItem_Click;
+            rAMToolStripMenuItem.Click += CategoryItem_Click;
+            caseToolStripMenuItem.Click += CategoryItem_Click;
+            powerSupplyToolStripMenuItem.Click += CategoryItem_Click;
+
+            monitorToolStripMenuItem.Click += CategoryItem_Click;
+            mouseToolStripMenuItem.Click += CategoryItem_Click;
+            keyboardToolStripMenuItem.Click += CategoryItem_Click;
+
+            modemToolStripMenuItem.Click += CategoryItem_Click;
+            networkCardToolStripMenuItem.Click += CategoryItem_Click;
+            networkAccessoriesToolStripMenuItem.Click += CategoryItem_Click;
+        }
+
+        private void CategoryItem_Click(object sender, EventArgs e)
 
         {
+            
             ToolStripMenuItem item = (ToolStripMenuItem)sender;
 
             if (item.Tag == null)
@@ -126,6 +137,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             }
 
             CategoryId = Convert.ToInt32(item.Tag);
+           // MessageBox.Show("CategoryId = " + CategoryId);
 
             LoadProducts();
 
