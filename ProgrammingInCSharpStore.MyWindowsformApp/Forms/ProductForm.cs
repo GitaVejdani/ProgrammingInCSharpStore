@@ -9,11 +9,26 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
         private int CategoryId;
 
-        private string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;";
+        private string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;TrustServerCertificate=True;";
 
         public ProductForm()
         {
             InitializeComponent();
+            SetCategoryIds();
+
+            cPUToolStripMenuItem.Click += CategoryItem_Click;
+            motherboardToolStripMenuItem.Click += CategoryItem_Click;
+            rAMToolStripMenuItem.Click += CategoryItem_Click;
+            caseToolStripMenuItem.Click += CategoryItem_Click;
+            powerSupplyToolStripMenuItem.Click += CategoryItem_Click;
+
+            monitorToolStripMenuItem.Click += CategoryItem_Click;
+            mouseToolStripMenuItem.Click += CategoryItem_Click;
+            keyboardToolStripMenuItem.Click += CategoryItem_Click;
+
+            modemToolStripMenuItem.Click += CategoryItem_Click;
+            networkCardToolStripMenuItem.Click += CategoryItem_Click;
+            networkAccessoriesToolStripMenuItem.Click += CategoryItem_Click;
         }
         public ProductForm(int categoryId)
         {
@@ -98,55 +113,21 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             }
         }
 
+         private void CategoryItem_Click(object sender, EventArgs e)
 
-
-        private void LoadCategories()
-        {
-            using SqlConnection connection = new SqlConnection(connectionString);
-
-            string query = @" SELECT Id, PersianName, ParentCategoryId
-                              FROM Category
-                              WHERE IsDeleted = 0
-                              ORDER BY Id";
-
-            using SqlCommand command = new SqlCommand(query, connection);
-
-            connection.Open();
-
-            using SqlDataReader reader = command.ExecuteReader();
-
-            while (reader.Read())
-            {
-                int categoryId = Convert.ToInt32(reader["Id"]);
-                string categoryName = reader["PersianName"].ToString();
-
-                ToolStripMenuItem item = new ToolStripMenuItem(categoryName);
-
-                item.Tag = categoryId;
-
-                item.Click += CategoryItem_Click;
-
-                categoryToolStripMenuItem.DropDownItems.Add(item);
-            }
-        }
-
-        private void CategoryItem_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem item = (ToolStripMenuItem)sender;
 
-
             if (item.Tag == null)
             {
-                MessageBox.Show(".CategoryId برای این آیتم تنظیم نشده است");
+                MessageBox.Show( ".برای این دسته‌بندی CategoryId تنظیم نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 return;
             }
 
-            int categoryId = (int)item.Tag;
-
-            CategoryId = categoryId;
+            CategoryId = Convert.ToInt32(item.Tag);
 
             LoadProducts();
-
 
         }
 

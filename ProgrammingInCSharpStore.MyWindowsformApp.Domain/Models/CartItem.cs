@@ -8,8 +8,8 @@ public class CartItem :IEntity<long>
     public DateTime CreatedAt { get; set; }
     public bool IsDeleted { get; set; }
     public DateTime DeletedAt { get; set; }
-    public int CartId { get; set; }
-    public int ProductId { get; set; }
+    public long CartId { get; set; }
+    public long ProductId { get; set; }
     public int Quantity { get; set; }
     public decimal UnitPrice  { get; set; }
 

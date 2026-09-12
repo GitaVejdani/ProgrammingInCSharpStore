@@ -12,7 +12,7 @@ public class Cart:IEntity<long>
     public bool IsDeleted { get; set; }
     public DateTime DeletedAt { get; set; }
     public CartStatus Status { get; set; }
-    public int CustomerID { get; set; }
+    public long CustomerID { get; set; }
     public CartStatus Type { get; set; }
      public DateTime? UpdatedAt { get; set; }
     
