@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37314.3 d17.14
+VisualStudioVersion = 17.14.37314.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp", "..\ProgrammingInCSharpStore.MyWindowsformApp\ProgrammingInCSharpStore.MyWindowsformApp.csproj", "{D98260D6-6745-756E-8A55-37CEEABC1255}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyAPIAPP", "..\ProgrammingInCSharpStore.MyWindowsformApp.MyAPIApp\ProgrammingInCSharpStore.MyAPIAPP.csproj", "{184B9E98-E3F7-16EA-6EF7-2EB578743B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.Domain", "..\ProgrammingInCSharpStore.MyWindowsformApp.Domain\ProgrammingInCSharpStore.MyWindowsformApp.Domain.csproj", "{16013919-189E-8B72-1CA5-1CA8BBA9416E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.Domain", "..\ProgrammingInCSharpStore.MyWindowsformApp.Domain\ProgrammingInCSharpStore.Domain.csproj", "{16013919-189E-8B72-1CA5-1CA8BBA9416E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.DAL", "..\ProgrammingInCSharpStore.MyWindowsformApp.DAL\ProgrammingInCSharpStore.MyWindowsformApp.DAL.csproj", "{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.DAL", "..\ProgrammingInCSharpStore.MyWindowsformApp.DAL\ProgrammingInCSharpStore.DAL.csproj", "{C6EDF9E4-AAF2-EB07-C640-C66DD5F16564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.MyWindowsformApp.Business", "..\ProgrammingInCSharpStore.MyWindowsformApp.Business\ProgrammingInCSharpStore.MyWindowsformApp.Business.csproj", "{A86613E2-14D3-2160-C294-B8C89933A8E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingInCSharpStore.Business", "..\ProgrammingInCSharpStore.MyWindowsformApp.Business\ProgrammingInCSharpStore.Business.csproj", "{A86613E2-14D3-2160-C294-B8C89933A8E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject

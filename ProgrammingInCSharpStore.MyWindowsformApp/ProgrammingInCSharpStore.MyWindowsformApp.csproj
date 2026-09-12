@@ -16,11 +16,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProgrammingInCSharpStore.MyWindowsformApp.Business\ProgrammingInCSharpStore.MyWindowsformApp.Business.csproj" />
+    <ProjectReference Include="..\ProgrammingInCSharpStore.MyWindowsformApp.Business\ProgrammingInCSharpStore.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Dtos\CustomerInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>

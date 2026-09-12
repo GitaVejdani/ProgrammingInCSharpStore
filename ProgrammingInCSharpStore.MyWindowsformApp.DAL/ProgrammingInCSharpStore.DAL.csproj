@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>ProgrammingInCSharpStore.Business</RootNamespace>
+    <RootNamespace>ProgrammingInCSharpStore.DAL</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProgrammingInCSharpStore.MyWindowsformApp.DAL\ProgrammingInCSharpStore.MyWindowsformApp.DAL.csproj" />
+    <ProjectReference Include="..\ProgrammingInCSharpStore.MyWindowsformApp.Domain\ProgrammingInCSharpStore.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            userNamerTextBox = new TextBox();
+            userNameTextBox = new TextBox();
             emailAddressTextBox = new TextBox();
             label2 = new Label();
             verifyCodeButton = new Button();
@@ -44,12 +44,12 @@
             label1.TabIndex = 0;
             label1.Text = "نام کاربری";
             // 
-            // userNamerTextBox
+            // userNameTextBox
             // 
-            userNamerTextBox.Location = new Point(140, 29);
-            userNamerTextBox.Name = "userNamerTextBox";
-            userNamerTextBox.Size = new Size(235, 31);
-            userNamerTextBox.TabIndex = 1;
+            userNameTextBox.Location = new Point(140, 29);
+            userNameTextBox.Name = "userNameTextBox";
+            userNameTextBox.Size = new Size(235, 31);
+            userNameTextBox.TabIndex = 1;
             // 
             // emailAddressTextBox
             // 
@@ -75,6 +75,7 @@
             verifyCodeButton.TabIndex = 4;
             verifyCodeButton.Text = "ارسال کد تایید";
             verifyCodeButton.UseVisualStyleBackColor = true;
+            verifyCodeButton.Click += verifyCodeButton_Click;
             // 
             // ForgetPasswordForm
             // 
@@ -84,7 +85,7 @@
             Controls.Add(verifyCodeButton);
             Controls.Add(emailAddressTextBox);
             Controls.Add(label2);
-            Controls.Add(userNamerTextBox);
+            Controls.Add(userNameTextBox);
             Controls.Add(label1);
             Name = "ForgetPasswordForm";
             Text = "ForgetPassword";
@@ -95,7 +96,7 @@
         #endregion
 
         private Label label1;
-        private TextBox userNamerTextBox;
+        private TextBox userNameTextBox;
         private TextBox emailAddressTextBox;
         private Label label2;
         private Button verifyCodeButton;

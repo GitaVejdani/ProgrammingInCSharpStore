@@ -47,7 +47,6 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             UserNameLabel.Size = new Size(87, 25);
             UserNameLabel.TabIndex = 0;
             UserNameLabel.Text = "نام کاربری";
-            
             // 
             // userNameTextBox
             // 
@@ -106,7 +105,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             loginButton.TabIndex = 6;
             loginButton.Text = "ورود";
             loginButton.UseVisualStyleBackColor = true;
-           
+            loginButton.Click += loginButton_Click;
             // 
             // LoginForm
             // 

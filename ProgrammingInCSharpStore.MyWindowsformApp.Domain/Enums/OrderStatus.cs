@@ -1,4 +1,4 @@
-﻿namespace ProgrammingInCSharp___Store.Domain.Enums;
+﻿namespace ProgrammingInCSharpStore.MyWindowsformApp.Domain.Enums;
 
 public enum OrderStatus
 {

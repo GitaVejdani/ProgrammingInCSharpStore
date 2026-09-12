@@ -110,7 +110,6 @@
             phoneNumberLabel.Size = new Size(106, 25);
             phoneNumberLabel.TabIndex = 7;
             phoneNumberLabel.Text = "شماره همراه";
-           
             // 
             // phoneNumberTextBox
             // 
@@ -118,7 +117,7 @@
             phoneNumberTextBox.Name = "phoneNumberTextBox";
             phoneNumberTextBox.Size = new Size(208, 31);
             phoneNumberTextBox.TabIndex = 6;
-            phoneNumberTextBox.TextChanged += textBox1_TextChanged;
+          
             // 
             // userNameLabel
             // 
@@ -160,7 +159,7 @@
             confirmPasswordLabel.Size = new Size(96, 25);
             confirmPasswordLabel.TabIndex = 13;
             confirmPasswordLabel.Text = "تکرار پسورد";
-            confirmPasswordLabel.Click += label3_Click;
+           
             // 
             // confirmPasswordTextBox
             // 
@@ -193,6 +192,7 @@
             registerButton.TabIndex = 16;
             registerButton.Text = "ثبت نام";
             registerButton.UseVisualStyleBackColor = true;
+            registerButton.Click += registerButton_Click;
             // 
             // cancelButton
             // 
@@ -202,6 +202,7 @@
             cancelButton.TabIndex = 17;
             cancelButton.Text = "انصراف";
             cancelButton.UseVisualStyleBackColor = true;
+            cancelButton.Click += cancelButton_Click;
             // 
             // emailLabel
             // 
@@ -218,6 +219,7 @@
             emailTextBox.Name = "emailTextBox";
             emailTextBox.Size = new Size(208, 31);
             emailTextBox.TabIndex = 18;
+           
             // 
             // personalInfoGroupBox
             // 
@@ -239,7 +241,7 @@
             personalInfoGroupBox.TabIndex = 20;
             personalInfoGroupBox.TabStop = false;
             personalInfoGroupBox.Text = "اطلاعات شخصی";
-            personalInfoGroupBox.Enter += groupBox1_Enter;
+           
             // 
             // accountInfoGroupBox
             // 

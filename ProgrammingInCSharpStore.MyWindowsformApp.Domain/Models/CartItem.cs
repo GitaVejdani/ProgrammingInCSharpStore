@@ -1,13 +1,22 @@
-﻿namespace ProgrammingInCSharp___Store.Domain.Models;
+﻿using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Contracts;
 
-public class CartItem
+namespace ProgrammingInCSharpStore.MyWindowsformApp.Domain.Models;
+
+public class CartItem :IEntity<long>
 {
-    public int ID { get; set; }
+    public long Id { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public bool IsDeleted { get; set; }
+    public DateTime DeletedAt { get; set; }
     public int CartId { get; set; }
     public int ProductId { get; set; }
     public int Quantity { get; set; }
     public decimal UnitPrice  { get; set; }
-   
 
+   // public Product Product { get; set; }
+
+
+
+   
 
 }

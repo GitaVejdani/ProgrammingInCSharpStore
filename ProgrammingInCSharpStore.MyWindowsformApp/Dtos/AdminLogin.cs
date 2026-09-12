@@ -4,9 +4,13 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp.Dtos;
 
 public class AdminLogin
 {
-    [JsonProperty]
-    public string Username { get; private set; }
+    [JsonConstructor]
+    public AdminLogin(string username, string password)
+    {
+        Username = username;
+        Password = password;
+    }
 
-    [JsonProperty]
+    public string Username { get; private set; }
     public string Password { get; private set; }
 }

@@ -1,8 +1,13 @@
-﻿namespace ProgrammingInCSharp___Store.Domain.Models;
+﻿using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Contracts;
 
-public class Customer
+namespace ProgrammingInCSharpStore.MyWindowsformApp.Domain.Models;
+
+public class Customer: IEntity<long>
 {
-    public int ID { get; set; }
+    public long Id { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public bool IsDeleted { get; set; }
+    public DateTime DeletedAt { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string NationalCode { get; set; }

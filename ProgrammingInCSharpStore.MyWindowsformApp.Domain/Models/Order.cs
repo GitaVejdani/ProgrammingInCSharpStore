@@ -1,12 +1,15 @@
-﻿using ProgrammingInCSharp___Store.Domain.Enums;
+﻿using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Contracts;
+using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Enums;
 
-namespace ProgrammingInCSharp___Store.Domain.Models;
+namespace ProgrammingInCSharpStore.MyWindowsformApp.Domain.Models;
 
-public class Order
+public class Order:IEntity<long>
 
 {
-    public int ID { get; set; }
-    public int OrderId { get; set; }
+    public long Id { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public bool IsDeleted { get; set; }
+    public DateTime DeletedAt { get; set; }
     public int ProductId { get; set; }
     public int Quantity { get; set; }
     public decimal UnitPrice { get; set; }

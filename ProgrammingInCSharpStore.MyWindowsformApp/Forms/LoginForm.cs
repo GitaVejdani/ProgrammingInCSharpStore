@@ -19,40 +19,41 @@ public partial class LoginForm : Form
         {
             jsonDataStr = File.ReadAllText(filePath);
             if (!string.IsNullOrEmpty(jsonDataStr))
-            {
+             {
                 logins = JsonConvert.DeserializeObject<List<AdminLogin>>(jsonDataStr);
-                //MessageBox.Show($"Count = {logins?.Count}");
-
-                //foreach (var item in logins)
-                //{
-                //    MessageBox.Show($"{item.Username} - {item.Password}");
-                //}
-
+                
             }
         }
     }
 
     private void loginButton_Click(object sender, EventArgs e)
     {
-        
+       
         string username = userNameTextBox.Text;
-        
         string password = passwordTextBox.Text;
         bool successLogin = false;
-
+        
+        
         if (logins is null || logins.Count == 0)
         {
             MessageBox.Show("لطفا ابتدا فایل کانفیگ ادمین‌ها را ایجاد نمائید.");
             return;
         }
-    
-        for (int i = 0; i < logins.Count; i++)
-            if (logins[i].Username.Trim().ToLower() == username.Trim().ToLower() && logins[i].Password.Trim() == password.Trim())
-                successLogin = true;
+        if (logins.Any(x => x.Username.Trim() == username.Trim() && x.Password.Trim() == password.Trim()))
+            successLogin = true;
+        
+        //for (int i = 0; i < logins.Count; i++)
+        //    if (logins[i].Username.Trim().ToLower() == username.Trim().ToLower() && logins[i].Password.Trim() == password.Trim())
+        //        successLogin = true;
 
         if (successLogin)
         {
+            this.Hide();
             ProductForm productForm = new ProductForm();
+            productForm.FormClosed += (s, args) =>
+            {
+                this.Show();
+            };
             productForm.ShowDialog();
             return;
         }
@@ -67,7 +68,13 @@ public partial class LoginForm : Form
     private void forgetPasswordButton_Click(object sender, EventArgs e)
     {
         ForgetPasswordForm forgetpasswordForm = new ForgetPasswordForm();
+
+        this.Hide();
+
         forgetpasswordForm.ShowDialog();
+
+        this.Show();
+        
     }
 
     private void registerButton_Click(object sender, EventArgs e)
@@ -76,7 +83,5 @@ public partial class LoginForm : Form
         registerForm.ShowDialog();
     }
 
-
-
-   
+  
 }
