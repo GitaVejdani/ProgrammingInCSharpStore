@@ -1,5 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
+using ProgrammingInCSharpStore.Business.Businesses;
 using ProgrammingInCSharpStore.MyWindowsformApp.Domain.Models;
+using ProgrammingInCSharpStore.MyWindowsformApp.Forms;
 using System.Data;
 
 
@@ -11,6 +13,11 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
         private int CategoryId;
 
         private string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;TrustServerCertificate=True;";
+
+        List<Product> products = new List<Product>();
+        Product targetProduct = null;
+        ProductBusiness productBusiness = new();
+
 
         public ProductForm()
         {
@@ -164,7 +171,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
                 adapter.Fill(table);
 
-                productsDataGridView.DataSource = table;
+                productDataGridView.DataSource = table;
             }
             catch (Exception ex)
             {
@@ -173,7 +180,37 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             }
 
         }
+        private void productDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
 
-        
+            var row = productDataGridView.Rows[e.RowIndex];
+
+            int id = Convert.ToInt32(row.Cells["Id"].Value);
+
+            Product selectedProduct = null;
+
+            foreach (var product in products)
+            {
+                if (product.Id == id)
+                {
+                    selectedProduct = product;
+                    break;
+                }
+            }
+
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("محصول پیدا نشد.");
+                return;
+            }
+
+            ProductDetailForm productDetailForm = new ProductDetailForm(selectedProduct);
+
+            productDetailForm.ShowDialog();
+        }
+
+
     }
 }

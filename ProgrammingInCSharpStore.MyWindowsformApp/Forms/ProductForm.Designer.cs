@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            productsDataGridView = new DataGridView();
+            productDataGridView = new DataGridView();
             menuStrip2 = new MenuStrip();
             categoryToolStripMenuItem = new ToolStripMenuItem();
             computerToolStripMenuItem = new ToolStripMenuItem();
@@ -49,7 +49,7 @@
             networkAccessoriesToolStripMenuItem = new ToolStripMenuItem();
             laptopToolStripMenuItem = new ToolStripMenuItem();
             mobileToolStripMenuItem = new ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)productsDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productDataGridView).BeginInit();
             menuStrip2.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,14 +62,14 @@
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // productsDataGridView
+            // productDataGridView
             // 
-            productsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            productsDataGridView.Location = new Point(23, 336);
-            productsDataGridView.Name = "productsDataGridView";
-            productsDataGridView.RowHeadersWidth = 62;
-            productsDataGridView.Size = new Size(1479, 630);
-            productsDataGridView.TabIndex = 1;
+            productDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            productDataGridView.Location = new Point(23, 336);
+            productDataGridView.Name = "productDataGridView";
+            productDataGridView.RowHeadersWidth = 62;
+            productDataGridView.Size = new Size(1479, 630);
+            productDataGridView.TabIndex = 1;
             // 
             // menuStrip2
             // 
@@ -210,13 +210,13 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1618, 1061);
-            Controls.Add(productsDataGridView);
+            Controls.Add(productDataGridView);
             Controls.Add(menuStrip1);
             Controls.Add(menuStrip2);
             MainMenuStrip = menuStrip1;
             Name = "ProductForm";
             Text = "ProductForm";
-            ((System.ComponentModel.ISupportInitialize)productsDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productDataGridView).EndInit();
             menuStrip2.ResumeLayout(false);
             menuStrip2.PerformLayout();
             ResumeLayout(false);
@@ -226,7 +226,7 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private DataGridView productsDataGridView;
+        private DataGridView productDataGridView;
         private MenuStrip menuStrip2;
         private ToolStripMenuItem categoryToolStripMenuItem;
         private ToolStripMenuItem computerToolStripMenuItem;
