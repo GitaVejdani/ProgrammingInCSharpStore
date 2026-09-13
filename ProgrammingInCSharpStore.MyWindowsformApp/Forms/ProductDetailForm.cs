@@ -11,11 +11,9 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp.Forms;
             InitializeComponent();
         }
 
-   public ProductDetailForm(Product product)
+   public ProductDetailForm(int productId)
     {
         InitializeComponent();
-
-        this.product = product;
 
         
     }

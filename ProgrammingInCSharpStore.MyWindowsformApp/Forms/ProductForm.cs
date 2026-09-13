@@ -189,24 +189,11 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
             int id = Convert.ToInt32(row.Cells["Id"].Value);
 
-            Product selectedProduct = null;
+           // MessageBox.Show("Product ID = " + id);
 
-            foreach (var product in products)
-            {
-                if (product.Id == id)
-                {
-                    selectedProduct = product;
-                    break;
-                }
-            }
+          
 
-            if (selectedProduct == null)
-            {
-                MessageBox.Show("محصول پیدا نشد.");
-                return;
-            }
-
-            ProductDetailForm productDetailForm = new ProductDetailForm(selectedProduct);
+            ProductDetailForm productDetailForm = new ProductDetailForm(id);
 
             productDetailForm.ShowDialog();
         }
