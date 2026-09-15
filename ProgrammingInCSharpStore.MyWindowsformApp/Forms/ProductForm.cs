@@ -128,6 +128,8 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             modemToolStripMenuItem.Click += CategoryItem_Click;
             networkCardToolStripMenuItem.Click += CategoryItem_Click;
             networkAccessoriesToolStripMenuItem.Click += CategoryItem_Click;
+            laptopToolStripMenuItem.Click += CategoryItem_Click;
+            mobileToolStripMenuItem.Click += CategoryItem_Click;
         }
 
         private void CategoryItem_Click(object sender, EventArgs e)
@@ -138,13 +140,14 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
             if (item.Tag == null)
             {
-                MessageBox.Show( ".برای این دسته‌بندی CategoryId تنظیم نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(".تنظیم نشده است CategoryId برای این دسته‌بندی ", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 return;
             }
 
             CategoryId = Convert.ToInt32(item.Tag);
-           // MessageBox.Show("CategoryId = " + CategoryId);
+
+            // MessageBox.Show("CategoryId = " + CategoryId);
 
             LoadProducts();
 
