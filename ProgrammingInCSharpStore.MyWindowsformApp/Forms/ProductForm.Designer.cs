@@ -93,48 +93,48 @@
             // 
             computerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { internalPartsToolStripMenuItem, accessoriesToolStripMenuItem, networkEquipmentToolStripMenuItem });
             computerToolStripMenuItem.Name = "computerToolStripMenuItem";
-            computerToolStripMenuItem.Size = new Size(174, 34);
+            computerToolStripMenuItem.Size = new Size(270, 34);
             computerToolStripMenuItem.Text = "کامپیوتر";
             // 
             // internalPartsToolStripMenuItem
             // 
             internalPartsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cPUToolStripMenuItem, motherboardToolStripMenuItem, rAMToolStripMenuItem, caseToolStripMenuItem, powerSupplyToolStripMenuItem });
             internalPartsToolStripMenuItem.Name = "internalPartsToolStripMenuItem";
-            internalPartsToolStripMenuItem.Size = new Size(222, 34);
+            internalPartsToolStripMenuItem.Size = new Size(270, 34);
             internalPartsToolStripMenuItem.Text = "قطعات داخلی";
             // 
             // cPUToolStripMenuItem
             // 
             cPUToolStripMenuItem.Name = "cPUToolStripMenuItem";
-            cPUToolStripMenuItem.Size = new Size(194, 34);
+            cPUToolStripMenuItem.Size = new Size(270, 34);
             cPUToolStripMenuItem.Text = "پردازنده";
             cPUToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // motherboardToolStripMenuItem
             // 
             motherboardToolStripMenuItem.Name = "motherboardToolStripMenuItem";
-            motherboardToolStripMenuItem.Size = new Size(194, 34);
+            motherboardToolStripMenuItem.Size = new Size(270, 34);
             motherboardToolStripMenuItem.Text = "مادربورد";
             motherboardToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // rAMToolStripMenuItem
             // 
             rAMToolStripMenuItem.Name = "rAMToolStripMenuItem";
-            rAMToolStripMenuItem.Size = new Size(194, 34);
+            rAMToolStripMenuItem.Size = new Size(270, 34);
             rAMToolStripMenuItem.Text = "رم";
             rAMToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // caseToolStripMenuItem
             // 
             caseToolStripMenuItem.Name = "caseToolStripMenuItem";
-            caseToolStripMenuItem.Size = new Size(194, 34);
+            caseToolStripMenuItem.Size = new Size(270, 34);
             caseToolStripMenuItem.Text = "کیس";
             caseToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // powerSupplyToolStripMenuItem
             // 
             powerSupplyToolStripMenuItem.Name = "powerSupplyToolStripMenuItem";
-            powerSupplyToolStripMenuItem.Size = new Size(194, 34);
+            powerSupplyToolStripMenuItem.Size = new Size(270, 34);
             powerSupplyToolStripMenuItem.Text = "منبع تغذیه";
             powerSupplyToolStripMenuItem.Click += CategoryItem_Click;
             // 
@@ -142,7 +142,7 @@
             // 
             accessoriesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { monitorToolStripMenuItem, mouseToolStripMenuItem, keyboardToolStripMenuItem });
             accessoriesToolStripMenuItem.Name = "accessoriesToolStripMenuItem";
-            accessoriesToolStripMenuItem.Size = new Size(222, 34);
+            accessoriesToolStripMenuItem.Size = new Size(270, 34);
             accessoriesToolStripMenuItem.Text = "قطعات جانبی";
             // 
             // monitorToolStripMenuItem
@@ -170,7 +170,7 @@
             // 
             networkEquipmentToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { modemToolStripMenuItem, networkCardToolStripMenuItem, networkAccessoriesToolStripMenuItem });
             networkEquipmentToolStripMenuItem.Name = "networkEquipmentToolStripMenuItem";
-            networkEquipmentToolStripMenuItem.Size = new Size(222, 34);
+            networkEquipmentToolStripMenuItem.Size = new Size(270, 34);
             networkEquipmentToolStripMenuItem.Text = "تجهیزات شبکه";
             // 
             // modemToolStripMenuItem
@@ -197,14 +197,16 @@
             // laptopToolStripMenuItem
             // 
             laptopToolStripMenuItem.Name = "laptopToolStripMenuItem";
-            laptopToolStripMenuItem.Size = new Size(174, 34);
+            laptopToolStripMenuItem.Size = new Size(270, 34);
             laptopToolStripMenuItem.Text = "لپ تاپ";
+            laptopToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // mobileToolStripMenuItem
             // 
             mobileToolStripMenuItem.Name = "mobileToolStripMenuItem";
-            mobileToolStripMenuItem.Size = new Size(174, 34);
+            mobileToolStripMenuItem.Size = new Size(270, 34);
             mobileToolStripMenuItem.Text = "موبایل";
+            mobileToolStripMenuItem.Click += CategoryItem_Click;
             // 
             // ProductForm
             // 
