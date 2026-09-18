@@ -5,7 +5,7 @@ namespace ProgrammingInCSharpStore.Business.Businesses;
 
 public class CustomerBusiness : ICustomerBusiness
 {
-    string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;";
+    string connectionString =    " Server = localhost,14330; Database = ProgrammingInCSharpStoreDB; User Id = sa;Password = SqlServer@123; TrustServerCertificate = True ;";
 
     public bool Add(Customer item)
     {

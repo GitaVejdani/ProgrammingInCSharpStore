@@ -34,7 +34,7 @@ public partial class ForgetPasswordForm : Form
 
         if (string.IsNullOrEmpty(userNameTextBox.Text) ||  string.IsNullOrEmpty(emailAddressTextBox.Text))
         {
-            MessageBox.Show("لطفاً نام کاربری و ایمیل را وارد کنید.");
+            MessageBox.Show(".لطفاً نام کاربری و ایمیل را وارد کنید");
             return;
         }
 
@@ -44,7 +44,7 @@ public partial class ForgetPasswordForm : Form
 
         if (customer == null)
         {
-            MessageBox.Show("نام کاربری یا ایمیل صحیح نیست.");
+            MessageBox.Show(".نام کاربری یا ایمیل صحیح نیست");
             return;
         }
 
@@ -57,7 +57,7 @@ public partial class ForgetPasswordForm : Form
         File.WriteAllText(filePath, json);
 
         
-        MessageBox.Show("کد تأیید به ایمیل شما ارسال شد.");       
+        MessageBox.Show(".کد تأیید به ایمیل شما ارسال شد");       
 
   
     }

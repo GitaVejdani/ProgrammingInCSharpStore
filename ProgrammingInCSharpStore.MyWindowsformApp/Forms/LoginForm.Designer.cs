@@ -53,7 +53,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             userNameTextBox.Location = new Point(162, 38);
             userNameTextBox.Margin = new Padding(4, 5, 4, 5);
             userNameTextBox.Name = "userNameTextBox";
-            userNameTextBox.Size = new Size(595, 31);
+            userNameTextBox.Size = new Size(373, 31);
             userNameTextBox.TabIndex = 1;
             // 
             // passwordTextBox
@@ -61,7 +61,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             passwordTextBox.Location = new Point(162, 121);
             passwordTextBox.Margin = new Padding(4, 5, 4, 5);
             passwordTextBox.Name = "passwordTextBox";
-            passwordTextBox.Size = new Size(595, 31);
+            passwordTextBox.Size = new Size(373, 31);
             passwordTextBox.TabIndex = 3;
             // 
             // passwordLabel
@@ -76,10 +76,10 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             // 
             // forgetPasswordButton
             // 
-            forgetPasswordButton.Location = new Point(527, 194);
+            forgetPasswordButton.Location = new Point(162, 192);
             forgetPasswordButton.Margin = new Padding(4, 5, 4, 5);
             forgetPasswordButton.Name = "forgetPasswordButton";
-            forgetPasswordButton.Size = new Size(230, 51);
+            forgetPasswordButton.Size = new Size(186, 51);
             forgetPasswordButton.TabIndex = 4;
             forgetPasswordButton.Text = "فراموشی رمز عبور";
             forgetPasswordButton.UseVisualStyleBackColor = true;
@@ -87,10 +87,10 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             // 
             // registerButton
             // 
-            registerButton.Location = new Point(250, 290);
+            registerButton.Location = new Point(162, 288);
             registerButton.Margin = new Padding(4, 5, 4, 5);
             registerButton.Name = "registerButton";
-            registerButton.Size = new Size(383, 58);
+            registerButton.Size = new Size(373, 47);
             registerButton.TabIndex = 5;
             registerButton.Text = "ثبت نام کاربر";
             registerButton.UseVisualStyleBackColor = true;
@@ -98,10 +98,10 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             // 
             // loginButton
             // 
-            loginButton.Location = new Point(162, 194);
+            loginButton.Location = new Point(416, 192);
             loginButton.Margin = new Padding(4, 5, 4, 5);
             loginButton.Name = "loginButton";
-            loginButton.Size = new Size(252, 51);
+            loginButton.Size = new Size(119, 51);
             loginButton.TabIndex = 6;
             loginButton.Text = "ورود";
             loginButton.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(791, 373);
+            ClientSize = new Size(566, 367);
             Controls.Add(loginButton);
             Controls.Add(registerButton);
             Controls.Add(forgetPasswordButton);

@@ -36,7 +36,7 @@ public partial class LoginForm : Form
         
         if (logins is null || logins.Count == 0)
         {
-            MessageBox.Show("لطفا ابتدا فایل کانفیگ ادمین‌ها را ایجاد نمائید.");
+            MessageBox.Show(".لطفا ابتدا فایل کانفیگ ادمین‌ها را ایجاد نمائید");
             return;
         }
         if (logins.Any(x => x.Username.Trim() == username.Trim() && x.Password.Trim() == password.Trim()))
@@ -59,7 +59,7 @@ public partial class LoginForm : Form
         }
         else
         {
-            MessageBox.Show("لطفا نام کاربری یا رمز عبور صحیح را وارد نمائید.");
+            MessageBox.Show(".لطفا نام کاربری یا رمز عبور صحیح را وارد نمائید");
             return;
         }
 

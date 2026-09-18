@@ -10,7 +10,7 @@ public partial class RegisterForm : Form
 
     private void registerButton_Click(object sender, EventArgs e)
     {
-        string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;TrustServerCertificate=True;";
+        string connectionString = " Server = localhost,14330; Database = ProgrammingInCSharpStoreDB; User Id = sa;Password = SqlServer@123; TrustServerCertificate = True ;";
 
         string firstName = firstNameTextBox.Text;
 

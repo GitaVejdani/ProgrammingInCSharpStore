@@ -6,8 +6,7 @@ namespace ProgrammingInCSharpStore.Business.Businesses
     public class ProductBusiness : IProductBusiness
     {
 
-        string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;";
-
+        string connectionString = " Server = localhost,14330; Database = ProgrammingInCSharpStoreDB; User Id = sa;Password = SqlServer@123; TrustServerCertificate = True ;";
         public bool Add(Product item)
         {
             throw new NotImplementedException();

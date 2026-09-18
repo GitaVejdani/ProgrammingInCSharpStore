@@ -7,7 +7,7 @@ public partial class ProductDetailForm : Form
 {
     private readonly int productId;
 
-    private readonly string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;TrustServerCertificate=True;";
+    private readonly string connectionString = "Server=localhost,14330;Database=ProgrammingInCSharpStoreDB;User Id=sa;Password=SqlServer@123;TrustServerCertificate=True;";
 
     public ProductDetailForm(int productId)
     {

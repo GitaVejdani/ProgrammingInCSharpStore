@@ -12,7 +12,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
 
         private int CategoryId;
 
-        private string connectionString = "Data Source=localhost;Initial Catalog=ProgrammingInCSharpStoreDB;Integrated Security=True;TrustServerCertificate=True;";
+        private string connectionString =    " Server = localhost,14330; Database = ProgrammingInCSharpStoreDB; User Id = sa;Password = SqlServer@123; TrustServerCertificate = True ;";
 
         List<Product> products = new List<Product>();
         Product targetProduct = null;
@@ -28,8 +28,8 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
         }
         public ProductForm(int categoryId)
         {
+           
             InitializeComponent();
-
             SetCategoryIds();
             RegisterCategoryEvents();
 
@@ -104,6 +104,16 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
                         case "لوازم جانبی شبکه":
                             networkAccessoriesToolStripMenuItem.Tag = id;
                             break;
+
+                        case "لپ تاپ":
+                            laptopToolStripMenuItem.Tag = id;
+                            break;
+
+                        case "موبايل":
+                            mobileToolStripMenuItem.Tag = id;
+                            break;
+
+
                     }
                 }
             }
@@ -130,9 +140,14 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             networkAccessoriesToolStripMenuItem.Click += CategoryItem_Click;
             laptopToolStripMenuItem.Click += CategoryItem_Click;
             mobileToolStripMenuItem.Click += CategoryItem_Click;
+
+         
         }
 
-        private void CategoryItem_Click(object sender, EventArgs e)
+
+
+
+         private void CategoryItem_Click(object sender, EventArgs e)
 
         {
             
@@ -152,6 +167,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             LoadProducts();
 
         }
+       
 
         private void LoadProducts()
         {
@@ -179,7 +195,7 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    "خطا در دریافت محصولات:\n" + ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ":خطا در دریافت محصولات\n" + ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -201,6 +217,6 @@ namespace ProgrammingInCSharpStore.MyWindowsformApp
             productDetailForm.ShowDialog();
         }
 
-
+         
     }
 }
